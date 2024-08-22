@@ -18,14 +18,14 @@ router.post('/dashboard', (req, res) => {
     });
 });
 
-router.get('/comments', (req, res) => {
+router.get('/comment', (req, res) => {
     Comment.findAll({
         where: { postId: req.query.post_id },
         include: [User],
     });
 });
 
-router.post('/comments', (req, res) => {
+router.post('/comment', (req, res) => {
     // create a new comment
     Comment.create({
         commentText: req.body.commentText,
