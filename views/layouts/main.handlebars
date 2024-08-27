@@ -14,10 +14,15 @@
       </h1>
       {{#if logged_in}}
         <nav>
-          <button class="btn" id="home">Home</button>
-            <a href="/dashboard">
-              <button class="btn" id="dashboard">Dashboard</button>
-            </a>
+          <a href="/">
+            <button class="btn" id="home">Home</button>
+          </a>
+          <a href="/dashboard">
+            <button class="btn" id="dashboard">Dashboard</button>
+          </a>
+          <a href="/create">
+            <button class="btn" id="create">Create Post</button>
+          </a>
           <button class="btn" id="logout">logout</button>
         </nav>
       {{/if}}

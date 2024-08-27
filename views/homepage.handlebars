@@ -1,1 +1,12 @@
+<Div>Todays posts:
+    <Div>
+        {{#each posts as |post|}}
+        <Div>Title: {{post.title}}</Div>
+        <Div>Content: {{post.content}}</Div>
+        <Div>User ID: {{post.user_id}}</Div>
+        {{!-- <Div>Date: {{post.created_at "YYYY-MM-DD"}}</div> --}}
+        <hr>
+        {{/each}}
+    </Div>
+</Div>
 
